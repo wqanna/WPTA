@@ -1,0 +1,127 @@
+
+<html>
+    <head>
+        <title>WPTA Survey</title>
+        <link rel="stylesheet" href="takeTheSurvey.CSS">
+        <link rel="stylesheet" href="navbar.CSS">
+        <script src="takeTheSurvey.js"></script>
+        <script src="checkForResponses.js"></script>
+    </head>
+
+<body>
+    <!-- NAVIGATION BAR -->
+    <ul class="navbar">
+
+        <li class="navElement"><a href = "Homepage.html" class="navButton" id="homeButton">Home</a></li>
+        <li class="navelement"><a href = "takeTheSurvey.html" class="active" class="navButton">Take the Survey</a></li>
+        <li class="navelement"><a href = "surveyStats.html" class="navButton">View the Statistics</a></li>
+        <li class="navelement"><a href = "improveWTPA.html" class="navButton">Improve WTPA</a></li>
+
+    </ul>
+
+    <!-- The image on the nav bar -->
+    <a href="Homepage.html"><img class="logo" src="logo.png"></a>
+    
+
+    <h1 id="mainHeader">Take Our Survey</h1>
+
+    <div class="mainBody">
+        <h2>Help us out!</h2>
+        <p>
+            Our website is designed so that the more people take our survey, the more expansive our statistics will be. Help out companies and women around the world by taking this survey and sharing it with others!
+        </p>
+
+        <h2>FAQ</h2>
+        <p>
+            <ul>
+                <li class="FAQ">Q: Can I still take the survey if I am a male?
+                    <br>
+                    <br>
+                    A: Yes! In fact, it is encouraged so that our data can better analyze the pay difference between males and females. We need participants from both demographics in order to get a fair representation. By completing this survey, even as a male, you are helping your female counterparts achieve fairer pay in the workplace, so, thank you!
+                </li>
+
+                <br>
+                <br>
+
+                <li class="FAQ">Q: Will my data be shared with anyone?
+                    <br>
+                    <br>
+                    A: We do not share your individual data with anyone. The only place where our data is reported is on the statistics page of our website, but this data is an average of all previous responses, so do not worry! Your info will never be directly shared. We will never send data to any third parties without permission.
+                </li>
+                
+                <br>
+                <br>
+
+                <li class="FAQ">Q: Where is the survey?
+                    <br>
+                    <br>
+                    A: Right here below!! 
+                </li>
+
+                <br>
+                <br>
+            </ul>
+        </p>
+        
+        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+<!--The Form-->
+        <div>
+            <h2>Fill Out Our Quick Survey!</h2>
+            <form >
+                <label><b>Email: &#40;We only collect emails to make sure each person can only submit one response.&#41;</b></label><br>
+                <input type="text" id="email"><br>
+
+                <br>
+                
+                <p id="genderq"><b>What is your gender?</b></p>
+                
+                <input type="radio" id="FemaleBubble" name="fav_language" value="Female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="MaleBubble" name="fav_language" value="Male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="NBBubble" name="fav_language" value="NB">
+                <label for="javascript">Non-Binary/Other</label><br>
+
+                <br>
+                <br>
+
+                <label for="salary"><b>What is your annual salary?</b></label>
+                <select id="salary" name="salary">
+                  <option value="0 - 25,000">0 - 25,000</option>
+                  <option value="25,000 - 40,000">25,000 - 40,000</option>
+                  <option value="40,000 - 60,000">40,000 - 60,000</option>
+                  <option value="60,000 - 80,000">60,000 - 80,000</option>
+                  <option value="80,000 - 100,000">80,000 - 100,000</option>
+                  <option value=" > 100,000">> 100,000</option>
+                </select>
+
+                <br>
+                <br>
+                <br>
+
+                <b>Company: </b>
+                <br>
+                <br>
+                <form name="form1" id="form1" action="/action_page.php" class = "form">
+                    Field: <select name="subject" id="subject">
+                      <option value="" selected="selected">Select subject</option>
+                    </select>
+                    <br><br>
+                    Company: <select name="topic" id="topic">
+                      <option value="" selected="selected">Please select a field first</option>
+                    </select>
+                    <br><br>
+                    Position: <select name="chapter" id="chapter">
+                      <option value="" selected="selected">Please select a company first</option>
+                    </select>
+                    <br><br>
+                </form>
+
+                <input onclick="storeValues()" type="submit" value="Submit" style = "font: italic;">
+
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

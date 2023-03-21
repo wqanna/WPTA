@@ -1,0 +1,85 @@
+body{
+    margin: 0px;
+}
+
+h2{
+    font-family: "Copperplate Gothic Light";
+    text-align: center;
+    font-size: 30px;
+}
+
+#mainHeader{
+    font-family: "papyrus";
+    text-align: center;
+    font-size: 45;
+    color:black;
+    padding-top: 150px;
+    padding-bottom: 80px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin:0px;
+    background-color: #f3e9c4;
+    background-size: cover;
+}
+
+.mainBody{
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 50px;
+}
+
+.row {
+    display: flex;
+}
+  
+.picture {
+    width: 30%;
+}
+  
+.description {
+    font-family: "Ebrima";
+    font-style: bold;
+    width: 70%;
+    margin-left: 20px;
+    padding: 3%;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  .button {
+    border-radius: 12px;
+    background-color: bisque;
+    color: black;
+    font-weight: 600;
+    font-variant: small-caps;
+    font: italic;
+    border: 2px solid black;
+    padding: 14px 40px;
+    font-size: 16px
+  }

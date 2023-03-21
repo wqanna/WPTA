@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title> WPTA - Home  </title>
+        <link rel="stylesheet" href="surveystats.CSS">
+        <link rel="stylesheet" href="navbar.CSS">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="surveyStats.js"></script>
+        <script src="checkForResponses.js"></script>
+    </head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <div id="navigation">
+        <ul class="navbar">
+
+            <li class="navElement"><a href = "Homepage.html" class="navButton" id="homeButton">Home</a></li>
+            <li class="navelement"><a href = "takeTheSurvey.html" class="navButton">Take the Survey</a></li>
+            <li class="navelement"><a href = "surveyStats.html" class="active" class="navButton">View the Statistics</a></li>
+            <li class="navelement"><a href = "improveWTPA.html" class="navButton">Improve WTPA</a></li>
+
+        </ul>
+    </div>
+
+    <!-- The image on the nav bar -->
+    <a href="Homepage.html"><img class="logo" src="logo.png"></a>
+    
+    <h1 id="mainHeader">Calculated Survey Results</h1>
+
+
+    <div style = "position:relative; padding-top:30px;">
+        <button onclick="refreshValues()" class="refreshButton" type="button" style = "font: italic; position:relative; align-self: center; margin-left: 40%; width:20%;">Refresh Values</button>
+    </div>
+
+    <!-- graphs -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<br>
+
+<!-- Google Graph -->
+<div class="resultsRow1" style="display: flex; height: 30%">
+    <div id="Google"></div>
+
+    <br>
+    
+
+    <!-- Omnicom Group Graph -->
+
+    <div id="Omnicom" ></div>
+
+    <!-- CVS Graph -->
+
+    <div id="CVS"></div>
+
+</div>
+<div class="resultsRow2" style="display: flex; height: 30%">
+
+    <!-- Apple Graph -->
+
+    <div id="Apple" ></div>
+
+    <!-- Bank of America Graph -->
+
+    <div id="BOA"></div>
+
+    
+    <!-- United Health Corp Graph -->
+
+    <div id="UHC"></div>
+</div>
+</body>
+</html>

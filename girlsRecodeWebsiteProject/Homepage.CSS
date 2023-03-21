@@ -1,0 +1,84 @@
+#mainHeader{
+    font-family: "papyrus";
+    text-align: center;
+    font-size: 45;
+    color:black;
+    padding-top: 250px;
+    padding-bottom: 200px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin:0px;
+    background-image: url("homepageBG.png");
+    background-size: cover;
+}
+
+p{
+    font-family: "Ebrima";
+    font-style: bold;
+    color:black;
+}
+
+h2{
+    color:black;
+    font-family: "Copperplate Gothic Light";
+}
+
+.mainBody{
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 50px;
+
+}
+
+body{
+    margin:0px;
+    background-color: white;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button {
+  border-radius: 12px;
+  background-color: bisque;
+  color: black;
+  font-weight: 600;
+  font-variant: small-caps;
+  font: italic;
+  border: 2px solid black;
+  padding: 14px 40px;
+  font-size: 16px
+}
+
+ul.a {
+  list-style-type: circle;
+}
+
+/* # = id */
+/* . = class */
+/*  marker = all elements of that marker */

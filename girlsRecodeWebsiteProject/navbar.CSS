@@ -1,0 +1,54 @@
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(37, 37, 37);
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+}
+
+.active {
+    background-color: black;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 18px;
+    text-decoration: none;
+}
+
+.navElement {
+    float: left;
+}
+
+.navButton {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 18px;
+    text-decoration: none;
+}
+
+
+.homeButton{
+    font-family: "Crete Round";
+    font-size: 20px;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.logo{
+    margin-left:10px;
+    margin-top:10px;
+    padding:0;
+    position:fixed;
+    width:80px; 
+    height:40px;
+}
+
+#homeButton {
+    padding-left: 125px;
+}

@@ -1,0 +1,67 @@
+ul{
+    list-style-type: none;
+}
+
+
+
+#mainHeader{
+    font-family: "papyrus";
+    text-align: center;
+    font-size: 45;
+    color:black;
+    padding-top: 250px;
+    padding-bottom: 200px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin:0px;
+    background-image: url("takeTheSurveyBG.png");
+    background-size: cover;
+}
+
+h2{
+    font-family: "Copperplate Gothic Light"
+}
+
+.FAQ{
+    font-family:"Ebrima";
+    font-style: bold;
+    color: black;
+}
+
+p{
+    font-family: "Ebrima";
+    font-style: bold;
+    color:black;
+}
+
+.mainBody{
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 50px;
+
+}
+
+
+body{
+    margin:0px;
+    background-color: white;
+}
+
+input[type=submit]{
+    border-radius: 12px;
+    background-color: bisque;
+    color: black;
+    font-weight: 600;
+    font-variant: small-caps;
+    font: italic;
+    border: 2px solid black;
+    padding: 14px 40px;
+    font-size: 16px
+}
+
+input[type=submit]:hover {
+    background-color: #d1bba1 ;
+  }
